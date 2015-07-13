@@ -1,0 +1,25 @@
+{
+  "name": "datauri-download",
+  "version": "0.1.0",
+  "description": "Tell the browser to download a datauri as a file",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weo-edu/datauri-download"
+  },
+  "keywords": [
+    "datauri",
+    "data",
+    "uri",
+    "download"
+  ],
+  "author": "ashaffer (http://github.com/ashaffer)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weo-edu/datauri-download/issues"
+  },
+  "homepage": "https://github.com/weo-edu/datauri-download"
+}
