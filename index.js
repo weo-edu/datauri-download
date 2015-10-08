@@ -1,10 +1,10 @@
-module.exports = function(filename, data) {
+module.exports = function(filename, type, data) {
   if (isMsie()) {
-    var blob = new Blob([data], {type: 'application/csv;charset=utf-8;'})
+    var blob = new Blob([data], {type: type})
     navigator.msSaveBlob(blob, filename)
   } else {
     var link = document.createElement('a')
-    link.setAttribute('href', encodeURI(data))
+    link.setAttribute('href', encodeURI('data:' + type + ',' + data))
     link.setAttribute('download', filename)
     document.body.appendChild(link)
     link.click()

@@ -5,5 +5,5 @@ Accepts a filename and a datauri, and causes the browser to open a download dial
 ## Example
 
 ```javascript
-datauriDownload('gradebook.csv', toCsv(gradebookData))
+datauriDownload('gradebook.csv', 'text/csv;charset=utf-8', toCsv(gradebookData))
 ```
